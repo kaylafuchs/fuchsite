@@ -4,7 +4,8 @@
   "description": "Kayla Fuchs's Personal Portfolio",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch server -e js,html server/start.js",
+    "start": "node server/start.js",
+    "dev": "webpack -w & nodemon --watch server -e js,html server/start.js",
     "test": "node index.js"
   },
   "author": "Kayla Edsall Fuchs",
