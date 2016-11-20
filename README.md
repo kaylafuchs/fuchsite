@@ -1,2 +1,1 @@
-# ~* Personal portfiolio site *~
-### Currently under construction.
+# ~* Hi, I'm Kayla and this is my portfolio site *~
