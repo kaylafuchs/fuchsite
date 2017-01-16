@@ -1,6 +1,7 @@
 'use strict';
 
 var webpack = require('webpack');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: './browser/react/index.js',
@@ -19,6 +20,10 @@ module.exports = {
         query: {
           presets: ['react', 'es2015']
         }
+      },
+      {
+        test: /\.scss$/,
+        loaders: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
   }
