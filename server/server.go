@@ -21,7 +21,7 @@ type Server struct {
 func NewServer(logger *logrus.Entry) *Server {
 	return &Server{
 		server: &http.Server{
-			Addr: ":8080",
+			Addr: ":2424",
 		},
 		logger: logger,
 	}
