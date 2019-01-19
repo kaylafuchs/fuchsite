@@ -1,8 +1,6 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
-const htmlWebpackPlugin = new HtmlWebPackPlugin({
-  template: './src/index.html',
-  filename: './index.html'
-});
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 module.exports = {
   entry: [
     '@babel/polyfill',
@@ -22,27 +20,22 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
-        use: [
-          {
-            loader: "style-loader"
-          },
-          {
-            loader: "css-loader",
-            options: {
-              modules: true,
-              importLoaders: 1,
-              localIdentName: "[name]_[local]_[hash:base64]",
-              sourceMap: true,
-              minimize: true
-            }
-           }
-         ]
-       }
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use: "css-loader!sass-loader",
+        })
+      }
      ]
   },
   devServer: {
     historyApiFallback: true,
   },
-  plugins: [htmlWebpackPlugin]
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: './src/index.html',
+      filename: './index.html'
+    }),
+    new ExtractTextPlugin('style.css')
+  ]
 };

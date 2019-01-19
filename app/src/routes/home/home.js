@@ -1,4 +1,5 @@
 import React from 'react'
+import Tiles from '../../components/tiles'
 
-const Home = () => (<div>HomePage</div>)
+const Home = () => (<Tiles />)
 export default Home

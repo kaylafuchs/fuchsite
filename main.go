@@ -7,7 +7,7 @@ import (
 	"github.com/sirupsen/logrus"
 )
 
-func newLogger(l string) *logrus.Entry {
+func newLogger() *logrus.Entry {
 	logger := logrus.New()
 	logger.Formatter = new(logrus.JSONFormatter)
 	logger.Out = os.Stdout
@@ -15,7 +15,7 @@ func newLogger(l string) *logrus.Entry {
 }
 
 func main() {
-	logger := newLogger("INFO")
+	logger := newLogger()
 	s := server.NewServer(logger)
 
 	s.NewRouter()
