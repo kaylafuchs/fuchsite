@@ -18,6 +18,7 @@ body {
 a {
     color: inherit; /* blue colors for links too */
     text-decoration: inherit; /* no underline */
+    display: block;
   }
 
 
@@ -204,10 +205,10 @@ a {
     background-size: cover;
     background-image: url("https://media.licdn.com/dms/image/C4E03AQFV5cQSOILl7w/profile-displayphoto-shrink_200_200/0?e=1553731200&v=beta&t=QC37W2cpdD2KRFIyfJw8C2Q9qBwUX9TRvgVX-GAke2k");
 
-    &:hover {
-        border: 4px solid #FFE35A;
-        outline: 2px solid #FDA800;
-    }
+    // &:hover {
+    //     border: 4px solid #FFE35A;
+    //     outline: 2px solid #FDA800;
+    // }
 
     // &:before {
     //     border: 1px solid #2E06AE;
@@ -259,6 +260,7 @@ a {
         background: #FFE35A;
         color: #FDA800;
         border: 1px solid #FDA800;
+        cursor: pointer;
     }
 }
 
