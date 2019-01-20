@@ -3,7 +3,7 @@
 
 $assistant: 'Assistant';
 
-html { background: white; }
+html { background: #fcfcf4; }
 
 // .container {
 //     display: flex;
@@ -28,7 +28,11 @@ html { background: white; }
     // height: 100vh;
 }
 
-.c-1{ background: #79a5ac; color: #ddd;}
+.c-1{
+    background: #81bedb;
+    color: black;
+    // border: 1px solid black;
+}
 .c-2{ background: #4ecdc4;}
 .c-3{ background: #bfd7ea;}
 .c-4{ background: #ff6b6b;}
@@ -39,6 +43,8 @@ html { background: white; }
     background-size: cover;
     background-position: 50% 50%;
     font-family: $assistant;
+    filter: drop-shadow(4px 6px 2px #d8d8d2);
+    color: black;
 }
 // .span-1 { grid-column-end: span 1; grid-row-end: span 1; min-height: 100px; }
 // .span-2 { grid-column-end: span 2; grid-row-end: span 2; min-height: 200px; }
