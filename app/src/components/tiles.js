@@ -23,8 +23,8 @@ const Tiles = () => {
                 </a>
                 <div className="card k">Projects</div>
                 <div className="card l"></div>
-                <div className="card m"></div>
-                {/* <div className="card n round"></div> */}
+                <div className="card m round"></div>
+                {/* <div className="card n"></div> */}
                 <div className="card o"></div>
                 <a href="https://github.com/kaylafuchs/" className="card p" target="_blank">Github</a>
                 <a href="https://www.linkedin.com/in/kaylafuchs/" target="_blank" className="card q">LinkedIn</a>

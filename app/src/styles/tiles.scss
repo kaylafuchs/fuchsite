@@ -1,18 +1,46 @@
 
 @import url(https://fonts.googleapis.com/css?family=Assistant);
 @import url(https://fonts.googleapis.com/css?family=Dancing+Script:700);
-@import url(https://fonts.googleapis.com/css?family=Bangers|Cutive+Mono|Open+Sans:300,400,700,800);
+@import url(https://fonts.googleapis.com/css?family=Bangers|Denk+One|Cousine|Lora|Cutive+Mono|Open+Sans:300,400,700,800);
 
 $assistant: 'Assistant', sans-serif;
 $dancingScript: 'Dancing Script', sans-serif;
 $primary: 'Bangers', sans-serif;
 $oswald: 'Oswald', sans-serif;
-$secondary: 'Cutive Mono', sans-serif;
+// $secondary: 'Cutive Mono', sans-serif;
+$secondary: 'Denk One', sans-serif;
+// $secondary: 'Lora', sans-serif;
+$secondary: 'Cousine', sans-serif;
+
+@mixin secondaryText {
+    font-family: $secondary;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+$teal: #5BFFF1;
+$salmon: #FF5B69;
+$darkSalmon: #e5515e;
+
+$lightTeal: #CDFFFA;
+$lightSalmon: #ffeef0;
+
+$deepPurple: #2E06AE;
+$yellow: #FFE670;
+$lightYellow: #FFF4BD;
+$brightYellow: #FDD100;
+
+$orange: #FDA800;
+
+// teal
+// 5BFFF1
+
+// light teal
 
 body {
     // background: #cbfff6;
-    background: #eff2fa;
-    // background-image: url("https://cdn4.vectorstock.com/i/1000x1000/38/08/black-and-white-background-in-thin-grunge-stripes-vector-19043808.jpg");
+  // background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrsAJGGCEhFHh6zVjJAz3HLcQ_fIOUabx4PwTeBpsidoaDgZj4");
 }
 
 a {
@@ -56,7 +84,7 @@ a {
     grid-row: 1 / span 3;
     grid-column: 3 / span 3;
     text-align: center;
-    background: #2E06AE;
+    background: $deepPurple;
     // color: #7FA6FF;
     color: #D3C8F5;
     border: 10px double #C7D5F4;;
@@ -68,31 +96,33 @@ a {
 .b {
     grid-row: 3 / span 3;
     grid-column: 6 / span 2;
-    background: #7FA6FF;
-    color: #2E06AE;
+    background: $teal;
+    color: $deepPurple;
     font-size: 50px;
     font-family: $primary;
     // border: 2px solid #D3C8F5;
-    border: 2px solid #2E06AE;
+    // border: 2px solid #2E06AE;
     // border: 2px solid #C7D5F4;
     // border-radius: 3px;
 
     &:hover {
-        background: #FFE35A;
-        color: #FDA800;
-        border: 2px solid #FDA800;
+        // background: #FFE35A;
+        background: $salmon;
+        color: $yellow;
+        // border: 2px solid #FDA800;
     }
 
 }
 
+// software engineer
 .c {
     text-align: center;
     font-size: 50px;
     grid-row: 4 / span 2;
     grid-column: 2 / span 2;
-    background: #7FA6FF;
-    color: #2E06AE;
-    border: 1px solid #2E06AE;
+    background: $teal;
+    color: $deepPurple;
+    // border: 1px solid #2E06AE;
 }
 
 .d {
@@ -105,40 +135,43 @@ a {
 .e {
     grid-row: 4 / span 1;
     grid-column: 5 / span 1;
-    background: #7FA6FF;
+    background: $lightTeal;
 }
 
 // location
 .h {
+    @include secondaryText();
     grid-row: 5 / span 1;
     grid-column: 4 / span 2;
     text-align: center;
-    font-size: 20px;
-    text-transform: uppercase;
-    // font-weight: 800;
-    font-family: $secondary;
-    background: #2E06AE;
-    color:  #C7D5F4;
-    border: 2px solid #C7D5F4;
+    // font-size: 20px;
+    // text-transform: uppercase;
+    // // font-weight: 800;
+    // font-family: $secondary;
+    background: $deepPurple;
+    color:  $lightTeal;
+    // border: 2px solid #C7D5F4;
 }
 
 // creative work
 .i {
+    @include secondaryText();
     grid-row: 6 / span 1;
     grid-column: 3 / span 2;
-    background: #C7D5F4;
-    border: 1px solid #D3C8F5;
-    color: #0637A9;
-    font-family: $secondary;
-    font-size: 20px;
+    background: $lightTeal;
+    // border: 1px solid #D3C8F5;
+    color: $deepPurple;
+    // font-family: $secondary;
+    // font-size: 20px;
     text-align: center;
-    text-transform: uppercase;
-    font-weight: 500;
+    // text-transform: uppercase;
+    // font-weight: 500;
 
     &:hover {
-        background: #FFE670;
-        color: #FDA800;
-        border: 1px solid #FDA800;
+        // background: #FFE670;
+        background: $salmon;
+        color: $yellow;
+        // border: 1px solid #FDA800;
     }
 
 }
@@ -148,38 +181,40 @@ a {
     grid-row: 6 / span 2;
     grid-column: 5 / span 2;
     background: #D3C8F5;
-    color: #2E06AE;
+    color: $deepPurple;
     font-size: 40px;
     font-family: $primary;
-    border: 2px solid #7FA6FF;
+    // border: 2px solid #7FA6FF;
 
     &:hover {
-        background: #FFEECB;
-        color: #FDD100;
-        border: 2px solid #FDD100;
+        // background: #FFEECB;
+        background: $lightYellow;
+        color: $salmon;
+        // border: 2px solid #FDD100;
 
         path {
-            fill: #FDD100;
+            fill: $salmon;
         }
     }
 }
 
 // projects
 .k {
+    @include secondaryText();
     grid-row: 6 / span 2;
     grid-column: 7 / span 2;
-    background: #2E06AE;
-    color: #D3C8F5;
+    background: $deepPurple;
+    color: $lightTeal;
 
-    font-size: 25px;
-    font-family: $secondary;
-    text-transform: uppercase;
-    border: 1px solid #D3C8F5;
+    // font-size: 25px;
+    // font-family: $secondary;
+    // text-transform: uppercase;
+    // border: 1px solid #D3C8F5;
 
     &:hover {
-        background: #FDA800;
-        color: #FFF6CB;
-        border: 1px solid #FFF6CB;
+        background: $lightYellow;
+        color: $salmon;
+        // border: 1px solid #FFF6CB;
     }
 }
 
@@ -196,11 +231,12 @@ a {
     grid-row: 3 / span 2;
     grid-column: 9 / span 2;
     // background: #7FA6FF;
-    color: #2E06AE;
+    // color: #2E06AE;
     // font-size: 40px;
     // font-family: $bangers;
-    border: 4px solid #D3C8F5;
-    outline: 2px solid #2E06AE;
+    // border: 4px solid #D3C8F5;
+    border: 3px solid $deepPurple;
+    // outline: 2px solid $lightTeal;
     // border-radius: 50%;
     background-size: cover;
     background-image: url("https://media.licdn.com/dms/image/C4E03AQFV5cQSOILl7w/profile-displayphoto-shrink_200_200/0?e=1553731200&v=beta&t=QC37W2cpdD2KRFIyfJw8C2Q9qBwUX9TRvgVX-GAke2k");
@@ -231,7 +267,7 @@ a {
     grid-column: 9 / span 1;
     // background: #D3C8F5;
     // color: #2E06AE;
-    background: #D3C8F5;
+    background: #C7D5F4;
     // border: 3px solid #D3C8F5;
     // background-image: url("https://media.licdn.com/dms/image/C4E03AQFV5cQSOILl7w/profile-displayphoto-shrink_200_200/0?e=1553731200&v=beta&t=QC37W2cpdD2KRFIyfJw8C2Q9qBwUX9TRvgVX-GAke2k")
 }
@@ -241,45 +277,47 @@ a {
     grid-row: 4 / span 1;
     grid-column: 8 / span 1;
     // color: #2E06AE;
-    background: #2E06AE;  
+    background: $deepPurple;  
 }
 
 // github
 .p {
+    @include secondaryText();
     grid-row: 5 / span 1;
     grid-column: 8 / span 2;
-    background: #C7D5F4;
-    color: #2E06AE;
-    font-size: 20px;
-    text-transform: uppercase;
+    background: $lightTeal;
+    color: $deepPurple;
+    // font-size: 20px;
+    // text-transform: uppercase;
     // font-weight: 800;
-    font-family: $secondary;
-    border: 1px solid #D3C8F5;
+    // font-family: $secondary;
+    // border: 1px solid #D3C8F5;
 
     &:hover {
-        background: #FFE35A;
-        color: #FDA800;
-        border: 1px solid #FDA800;
-        cursor: pointer;
+        background: $salmon;
+        color: $yellow;
+        // border: 1px solid #FDA800;
+        // cursor: pointer;
     }
 }
 
 // linkedin
 .q {
+    @include secondaryText();
     grid-row: 6 / span 1;
     grid-column: 9 / span 2;
     background: #D3C8F5;
-    color: #2E06AE;
-    font-size: 20px;
-    font-family: $secondary;
-    text-transform: uppercase;
-    border: 1px solid #7FA6FF;
+    color: $deepPurple;
+    // font-size: 20px;
+    // font-family: $secondary;
+    // text-transform: uppercase;
+    // border: 1px solid #7FA6FF;
     // font-weight: 800;
 
     &:hover {
-        background: #FFEECB;
-        color: #FDD100;
-        border: 1px solid #FDD100;
+        background: $lightYellow;
+        color: $salmon;
+        // border: 1px solid #FDD100;
     }
 }
 
@@ -302,9 +340,6 @@ a {
     text-transform: uppercase;
 }
 
-.brooklyn {
-    font-size: 40px;
-}
 
 .row-1-3 {
     grid-row: 1 / span 3;
