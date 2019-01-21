@@ -42,13 +42,70 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 20px 15px;
 }
 
 .section {
     display: flex;
     flex-direction: column;
+    font-family: $tertiary;
+    font-size: 20px;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+    color: $deepPurple;
 }
 
 .section-heading {
     @include secondaryText;
+    font-size: 40px;
+    background: $lightTeal;
+    padding: 2px;
+}
+
+.section-sub-heading {
+    @include secondaryText;
+    background: $lightYellow;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.section-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+
+}
+
+.section-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.skills-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.skills-column {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+}
+
+.date {
+    font-family: $tertiary;
+    font-size: 16px;
+    // text-transform: uppercase;
+}
+
+.work-description {
+    padding: 10px;
+    font-size: inherit;
 }
