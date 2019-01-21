@@ -4,7 +4,7 @@ import '../styles/resume.scss';
 
 const Resume = () => {
     return (
-        <div class="resume">
+        <div className="resume">
             <div className="section skills">
                 <div className="section-heading">Skills</div>
                 <div className="section-row">
@@ -151,7 +151,7 @@ const Resume = () => {
                         <div className="section-sub-sub-heading">Full professional proficiency</div>
                         <div className="work-description">
                             Diplôme de Français Professionel - Affaires C1
-                            (business French certification fromt the Chambre de Commerce et d\'Industrie de Paris).
+                            (business French certification from the Paris Chambre de Commerce and Industry).
                             Three time Lauréat National in Le Grand Concours, the National French 
                             Contest of the American Association of Teachers of French.
                         </div>
