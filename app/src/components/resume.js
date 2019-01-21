@@ -71,10 +71,11 @@ const Resume = () => {
                 <div className="section-heading">Work Experience</div>
                 <div className="section-row">
                     <div className="section-column">
-                    <div className="section-sub-heading">Software Engineer | BounceX</div>
+                    <div className="section-sub-heading">Software Engineer</div>
+                    <div className="section-sub-sub-heading">BounceX</div>
                         {/* <div className="date">February 2017-Present</div> */}
                         <div className="work-description">
-                            Full-stack developer working on triggered sends products with a focus on
+                            Full stack developer working on triggered sends products with a focus on
                             web push and SMS channels. Develops microservices using Golang, Kubernetes, and 
                             a variety of AWS and GCP services. Develops and maintains Node.js and PHP services.
                         </div>
@@ -82,12 +83,81 @@ const Resume = () => {
                 </div>
                 <div className="section-row">
                     <div className="section-column">
-                    <div className="section-sub-heading">Integration Engineer | BounceX</div>
+                    <div className="section-sub-heading">Integration Engineer</div>
+                    <div className="section-sub-sub-heading">BounceX</div>
                         {/* <div className="date">February 2017-Present</div> */}
                         <div className="work-description">
                             Built custom integrations for e-commerce and publishing clients using Javascript and jQuery.
                             Integrated BounceX PHP platform with client APIs.
                             Managed a team of three integration engineers.
+                        </div>
+                    </div>
+                </div>
+                <div className="section-row">
+                    <div className="section-column">
+                    <div className="section-sub-heading">Teaching Fellow & Developer</div>
+                    <div className="section-sub-sub-heading">Fullstack Academy</div>
+                        {/* <div className="date">February 2017-Present</div> */}
+                        <div className="work-description">
+                            Helped teach full stack Javascript development.
+                            Code reviewed student projects and assessements.
+                            Interviewed prospective students. Built features for Fullstack Academy's LearnDot platform using Angular and Node.js.
+                        </div>
+                    </div>
+                </div>
+                <div className="section-row">
+                    <div className="section-column">
+                    <div className="section-sub-heading">Customer Success Manager</div>
+                    <div className="section-sub-sub-heading">BounceX</div>
+                        {/* <div className="date">February 2017-Present</div> */}
+                        <div className="work-description">
+                            Worked with enterprise e-commerce and publishing clients to implement 
+                            high-impact digital marketing campaigns using BounceX's behavioral 
+                            automation platform. Analyzed client data and ran A/B tests to optimize performance.
+                        </div>
+                    </div>
+                </div>
+                <div className="section-row">
+                    <div className="section-column">
+                    <div className="section-sub-heading">Ad Design Assistant</div>
+                    <div className="section-sub-sub-heading">The Daily Pennsylvanian</div>
+                        {/* <div className="date">February 2017-Present</div> */}
+                        <div className="work-description">
+                            Designed a wide variety of ads for both print and digital publications.
+                            Developed brand styles and created spec ads for local businesses and new customers.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="section education">
+                <div className="section-heading">Education</div>
+                <div className="section-row">
+                    <div className="section-column">
+                        <div className="section-sub-heading">Fullstack Academy of Code</div>
+                        <div className="section-sub-sub-heading">Software Engineering Immersive</div>
+                    </div>
+                </div>
+                <div className="section-row">
+                <div className="section-column">
+                        <div className="section-sub-heading">University of Pennsylvania</div>
+                        <div className="section-sub-sub-heading">BA, Visual Studies</div>
+                        <div className="work-description">
+                            Summa Cum Laude. Minors: French, History of Art.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="section languages">
+                <div className="section-heading">Languages</div>
+                <div className="section-row">
+                    <div className="section-column">
+                        <div className="section-sub-heading">French</div>
+                        <div className="section-sub-sub-heading">Full professional proficiency</div>
+                        <div className="work-description">
+                            Diplôme de Français Professionel - Affaires C1
+                            (business French certification fromt the Chambre de Commerce et d'Industrie de Paris). 
+                            Three time Lauréat National in Le Grand Concours, the National French 
+                            Contest of the American Association of Teachers of French.
                         </div>
                     </div>
                 </div>
