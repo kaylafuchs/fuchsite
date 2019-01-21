@@ -2,16 +2,14 @@
 
 .navbar {
     @include secondaryText;
-    color: $deepPurple;
+    @include deepPurpleOnTeal;
     padding: 10px 30px;
-    background: $teal;
     display: flex;
     flex-direction: row;
     justify-content: left;
 
     &:hover {
-        background: $salmon;
-        color: $yellow;
+        @include yellowOnSalmon;
     }
 }
 

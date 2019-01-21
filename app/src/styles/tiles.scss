@@ -3,8 +3,8 @@
 .grid {
 	display: grid;
     grid-template-columns: repeat(11, minmax(100px, 1fr));
-	grid-gap: 15px;
     grid-auto-rows: minmax(100px, 1fr);
+	grid-gap: 15px;
     grid-auto-flow: dense;
     justify-content: center;
     position: relative;
@@ -15,50 +15,45 @@
     min-height: 100px;
     background-size: cover;
     background-position: 50% 50%;
-    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-// name
+/* Name */
 .a {
+    @include lightPurpleOnDeepPurple;
     grid-row: 1 / span 3;
     grid-column: 3 / span 3;
     text-align: center;
-    background: $deepPurple;
-    color: $lightPurple;
     border: 10px double #C7D5F4;
     font-family: $primaryFont;
     font-weight: 700;
     font-size: 100px;
 }
 
-// resume
+/* Resume */
 .b {
+    @include deepPurpleOnTeal;
     grid-row: 3 / span 3;
     grid-column: 6 / span 2;
-    background: $teal;
-    color: $deepPurple;
     font-size: 50px;
     font-family: $primaryFont;
 
     &:hover {
-        background: $salmon;
-        color: $yellow;
+        @include yellowOnSalmon;
     }
 
 }
 
-// software engineer
+/* Software Engineer */
 .c {
+    @include deepPurpleOnTeal;
     text-align: center;
     font-size: 50px;
     grid-row: 4 / span 2;
     grid-column: 2 / span 2;
-    background: $teal;
-    color: $deepPurple;
     font-family: $primaryFont;
     text-transform: uppercase;
 
@@ -80,44 +75,38 @@
     border-radius: 50%;
 }
 
-// location
-.h {
-    @include secondaryText();
+/* Location */
+.f {
+    @include secondaryText;
+    @include lightTealOnDeepPurple;
     grid-row: 5 / span 1;
     grid-column: 4 / span 2;
-    text-align: center;
-    background: $deepPurple;
-    color:  $lightTeal;
 }
 
-// creative work
-.i {
-    @include secondaryText();
+/* Creative Work */
+.g {
+    @include secondaryText;
     grid-row: 6 / span 1;
     grid-column: 3 / span 2;
     background: $lightTeal;
     color: $deepPurple;
-    text-align: center;
 
     &:hover {
-        background: $salmon;
-        color: $yellow;
+        @include yellowOnSalmon;
     }
 
 }
 
-// contact
-.j {
+/* Contact */
+.h {
+    @include deepPurpleOnLightPurple;
     grid-row: 6 / span 2;
     grid-column: 5 / span 2;
-    background: $lightPurple;
-    color: $deepPurple;
     font-size: 40px;
     font-family: $primaryFont;
 
     &:hover {
-        background: $lightYellow;
-        color: $salmon;
+        @include salmonOnLightYellow;
 
         path {
             fill: $salmon;
@@ -125,28 +114,26 @@
     }
 }
 
-// projects
-.k {
-    @include secondaryText();
+/* Projects */
+.i {
+    @include secondaryText;
+    @include lightTealOnDeepPurple;
     grid-row: 6 / span 2;
     grid-column: 7 / span 2;
-    background: $deepPurple;
-    color: $lightTeal;
 
     &:hover {
-        background: $lightYellow;
-        color: $salmon;
+        @include salmonOnLightYellow;
     }
 }
 
-.l {
+.j {
     grid-row: 2 / span 2;
     grid-column: 8 / span 1;
     background: $lightPurple;
 }
 
-// headshot
-.m {
+/* Headshot */
+.k {
     grid-row: 3 / span 2;
     grid-column: 9 / span 2;
     border: 3px solid $deepPurple;
@@ -154,45 +141,33 @@
     background-image: url('/img/headshot.jpg');
 }
 
-
-.n {
-    grid-row: 2 / span 1;
-    grid-column: 9 / span 1;
-    background: #C7D5F4;
-}
-
-
-.o {
+.l {
     grid-row: 4 / span 1;
     grid-column: 8 / span 1;
     background: $deepPurple;
 }
 
-// github
-.p {
-    @include secondaryText();
+/* Github */
+.m {
+    @include secondaryText;
+    @include deepPurpleOnLightTeal;
     grid-row: 5 / span 1;
     grid-column: 8 / span 2;
-    background: $lightTeal;
-    color: $deepPurple;
 
     &:hover {
-        background: $salmon;
-        color: $yellow;
+        @include yellowOnSalmon;
     }
 }
 
-// linkedin
-.q {
-    @include secondaryText();
+/* LinkedIn */
+.n {
+    @include secondaryText;
+    @include deepPurpleOnLightPurple;
     grid-row: 6 / span 1;
     grid-column: 9 / span 2;
-    background: $lightPurple;
-    color: $deepPurple;
 
     &:hover {
-        background: $lightYellow;
-        color: $salmon;
+        @include salmonOnLightYellow;
     }
 }
 

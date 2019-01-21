@@ -30,7 +30,48 @@ $orange: #FDA800;
     font-weight: 500;
 }
 
-/* Styles */
+@mixin deepPurpleOnTeal {
+    background: $teal;
+    color: $deepPurple;
+}
+
+@mixin tealOnDeepPurple {
+    background: $deepPurple;
+    color: $teal;
+}
+
+@mixin lightTealOnDeepPurple {
+    background: $deepPurple;
+    color: $lightTeal;
+}
+
+@mixin deepPurpleOnLightTeal {
+    background: $lightTeal;
+    color: $deepPurple;
+}
+
+@mixin deepPurpleOnLightPurple {
+    background: $lightPurple;
+    color: $deepPurple;
+}
+
+@mixin lightPurpleOnDeepPurple {
+    background: $deepPurple;
+    color: $lightPurple;
+}
+
+@mixin yellowOnSalmon {
+    background: $salmon;
+    color: $yellow;
+}
+
+@mixin salmonOnLightYellow {
+    background: $lightYellow;
+    color: $salmon;
+}
+
+
+/* Reset */
 body, html {
     margin: 0;
     padding: 0;
