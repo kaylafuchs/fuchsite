@@ -72,8 +72,7 @@ const Resume = () => {
                 <div className="section-row">
                     <div className="section-column">
                     <div className="section-sub-heading">Software Engineer</div>
-                    <div className="section-sub-sub-heading">BounceX</div>
-                        {/* <div className="date">February 2017-Present</div> */}
+                    <div className="section-sub-sub-heading">BounceX | July 2018 – Present</div>
                         <div className="work-description">
                             Full stack developer working on triggered sends products with a focus on
                             web push and SMS channels. Develops microservices using Golang, Kubernetes, and 
@@ -84,8 +83,7 @@ const Resume = () => {
                 <div className="section-row">
                     <div className="section-column">
                     <div className="section-sub-heading">Integration Engineer</div>
-                    <div className="section-sub-sub-heading">BounceX</div>
-                        {/* <div className="date">February 2017-Present</div> */}
+                    <div className="section-sub-sub-heading">BounceX | February 2017 - July 2018</div>
                         <div className="work-description">
                             Built custom integrations for e-commerce and publishing clients using Javascript and jQuery.
                             Integrated BounceX PHP platform with client APIs.
@@ -96,20 +94,19 @@ const Resume = () => {
                 <div className="section-row">
                     <div className="section-column">
                     <div className="section-sub-heading">Teaching Fellow & Developer</div>
-                    <div className="section-sub-sub-heading">Fullstack Academy</div>
-                        {/* <div className="date">February 2017-Present</div> */}
+                    <div className="section-sub-sub-heading">Fullstack Academy | October 2016 – February 2017</div>
                         <div className="work-description">
                             Helped teach full stack Javascript development.
                             Code reviewed student projects and assessements.
-                            Interviewed prospective students. Built features for Fullstack Academy's LearnDot platform using Angular and Node.js.
+                            Interviewed prospective students. Built features for online 
+                            learning platform using Angular and Node.js.
                         </div>
                     </div>
                 </div>
                 <div className="section-row">
                     <div className="section-column">
                     <div className="section-sub-heading">Customer Success Manager</div>
-                    <div className="section-sub-sub-heading">BounceX</div>
-                        {/* <div className="date">February 2017-Present</div> */}
+                    <div className="section-sub-sub-heading">BounceX | July 2014 – July 2016</div>
                         <div className="work-description">
                             Worked with enterprise e-commerce and publishing clients to implement 
                             high-impact digital marketing campaigns using BounceX's behavioral 
@@ -120,8 +117,7 @@ const Resume = () => {
                 <div className="section-row">
                     <div className="section-column">
                     <div className="section-sub-heading">Ad Design Assistant</div>
-                    <div className="section-sub-sub-heading">The Daily Pennsylvanian</div>
-                        {/* <div className="date">February 2017-Present</div> */}
+                    <div className="section-sub-sub-heading">The Daily Pennsylvanian | September 2013 – May 2014</div>
                         <div className="work-description">
                             Designed a wide variety of ads for both print and digital publications.
                             Developed brand styles and created spec ads for local businesses and new customers.
