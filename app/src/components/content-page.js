@@ -6,9 +6,7 @@ import Projects from './projects';
 
 
 const ContentPage = (props) => {
-    console.log("content", props.content);
     let content;
-
     if (props.content === 'resume') {
         content = <Resume/>
     } else if (props.content === 'creative-work') {
