@@ -2,12 +2,15 @@ package server
 
 import (
 	"context"
+	"fmt"
 	"net/http"
 	"os"
 	"os/signal"
+	"strings"
 	"syscall"
 	"time"
 
+	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 
 	"github.com/sirupsen/logrus"
@@ -32,13 +35,26 @@ func NewServer(logger *logrus.Entry) *Server {
 // NewRouter initializes routing for an instance of Server. Serves the index page for all paths except /static/.
 func (s *Server) NewRouter() {
 	router := mux.NewRouter()
+	router.Use(handlers.ProxyHeaders)
+
 	router.PathPrefix("/static/").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir("./app/dist/static"))))
-	router.PathPrefix("/").HandlerFunc(s.IndexPageHandler)
-	s.server.Handler = router
+	router.PathPrefix("/").HandlerFunc(s.indexPageHandler)
+
+	s.server.Handler = s.newHTTPSRedirect(router)
 }
 
-// IndexPageHandler serves the index page for the single page app.
-func (s *Server) IndexPageHandler(w http.ResponseWriter, r *http.Request) {
+func (s *Server) newHTTPSRedirect(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		if !strings.Contains(r.Host, "localhost") && r.Header.Get("X-Forwarded-Proto") != "https" {
+			newURL := fmt.Sprintf("https://%s%s", r.Host, r.URL.RequestURI())
+			http.Redirect(w, r, newURL, http.StatusMovedPermanently)
+			return
+		}
+		next.ServeHTTP(w, r)
+	})
+}
+
+func (s *Server) indexPageHandler(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "./app/dist/index.html")
 }
 
