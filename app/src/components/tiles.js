@@ -1,5 +1,7 @@
 import React from 'react'
+import '../styles/shared.scss';
 import '../styles/tiles.scss';
+import { Link } from 'react-router-dom'
 
 const Tiles = () => {
     return (
@@ -10,18 +12,18 @@ const Tiles = () => {
                         Kayla<br></br>Fuchs
                     </div>
                 </div>
-                <div className="card b">Resume</div>
+                <Link to="/resume" className="card b">Resume</Link>
                 <div className="card c">
                     <div className="se">Software <br></br>Engineer</div>
                 </div>
                 <div className="card d"></div>
                 <div className="card e"></div>
                 <div className="card h">Brooklyn, NY</div>
-                <div className="card i">Creative Work</div>
+                <Link to="/creative-work" className="card i">Creative Work</Link>
                 <a className="card j round" href="mailto:kfuchs24@gmail.com">Contact
                     <svg xmlns="http://www.w3.org/2000/ svg" width="40" height="40" viewBox="0 0 24 24"><path fill="#2E06AE" d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
                 </a>
-                <div className="card k">Projects</div>
+                <Link to="/projects" className="card k">Projects</Link>
                 <div className="card l"></div>
                 <div className="card m round"></div>
                 {/* <div className="card n"></div> */}

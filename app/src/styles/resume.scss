@@ -1,0 +1,54 @@
+@import 'shared';
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    // background: $teal;
+    padding: 10px 30px;
+    align-items: center;
+}
+
+.divider {
+    background: $deepPurple;
+    width: 100%;
+    height: 7px;
+}
+
+h1 {
+    font-family: $primary;
+    font-size: 60px;
+    color: $deepPurple;
+    letter-spacing: 2px;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-family: $secondary;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: $deepPurple;
+    margin: 0 0 0 20px;
+}
+
+.rectangle {
+    width: 200px;
+    height: 100px;
+    background: $teal;
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-heading {
+    @include secondaryText;
+}

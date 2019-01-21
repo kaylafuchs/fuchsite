@@ -1,0 +1,35 @@
+@import 'shared';
+
+// .kf {
+//     @include secondaryText;
+//     color: $deepPurple;
+//     // font-weight: 800;
+// }
+
+.navbar {
+    @include secondaryText;
+    color: $deepPurple;
+    padding: 10px 30px;
+    background: $teal;
+    display: flex;
+    flex-direction: row;
+    // align-items: flex-start;
+    justify-content: left;
+    // border-bottom: 2px solid $deepPurple;
+
+    &:hover {
+        background: $salmon;
+        color: $yellow;
+        // border-bottom: 2px solid $yellow;
+
+        .btn-back {
+            path {
+                fill: $yellow;
+            }
+        }
+    }
+}
+
+.btn-back {
+    margin: 0 15px 0 0;
+}
