@@ -151,7 +151,7 @@ const Resume = () => {
                         <div className="section-sub-sub-heading">Full professional proficiency</div>
                         <div className="work-description">
                             Diplôme de Français Professionel - Affaires C1
-                            (business French certification fromt the Chambre de Commerce et d'Industrie de Paris). 
+                            (business French certification fromt the Chambre de Commerce et d\'Industrie de Paris).
                             Three time Lauréat National in Le Grand Concours, the National French 
                             Contest of the American Association of Teachers of French.
                         </div>
