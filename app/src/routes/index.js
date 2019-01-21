@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Home from './home'
+import Home from '../components/tiles'
 import ContentPage from '../components/content-page'
 
 class AppRouter extends React.Component {

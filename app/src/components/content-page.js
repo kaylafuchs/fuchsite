@@ -18,7 +18,7 @@ const ContentPage = (props) => {
     }
 
     return (
-        <div>
+        <div className="container">
             <Nav/>
             {content}
         </div>

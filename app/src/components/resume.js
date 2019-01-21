@@ -97,7 +97,7 @@ const Resume = () => {
                     <div className="section-sub-sub-heading">Fullstack Academy | October 2016 – February 2017</div>
                         <div className="work-description">
                             Helped teach full stack Javascript development.
-                            Code reviewed student projects and assessements.
+                            Code reviewed student projects and assessments.
                             Interviewed prospective students. Built features for online 
                             learning platform using Angular and Node.js.
                         </div>
@@ -130,13 +130,13 @@ const Resume = () => {
                 <div className="section-row">
                     <div className="section-column">
                         <div className="section-sub-heading">Fullstack Academy of Code</div>
-                        <div className="section-sub-sub-heading">Software Engineering Immersive</div>
+                        <div className="section-sub-sub-heading">Software Engineering Immersive | 2016</div>
                     </div>
                 </div>
                 <div className="section-row">
                 <div className="section-column">
                         <div className="section-sub-heading">University of Pennsylvania</div>
-                        <div className="section-sub-sub-heading">BA, Visual Studies</div>
+                        <div className="section-sub-sub-heading">BA, Visual Studies | 2014</div>
                         <div className="work-description">
                             Summa Cum Laude. Minors: French, History of Art.
                         </div>
