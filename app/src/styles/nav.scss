@@ -1,0 +1,18 @@
+@import 'shared';
+
+.navbar {
+    @include secondaryText;
+    @include deepPurpleOnTeal;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+    &:hover {
+        @include yellowOnSalmon;
+    }
+}
+
+.btn-back {
+    margin: 0 15px 0 0;
+}

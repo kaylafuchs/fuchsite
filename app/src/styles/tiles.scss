@@ -1,0 +1,176 @@
+@import 'shared';
+
+.grid {
+	display: grid;
+    grid-template-columns: repeat(11, minmax(100px, 1fr));
+    grid-auto-rows: minmax(100px, 1fr);
+	grid-gap: 15px;
+    grid-auto-flow: dense;
+    justify-content: center;
+    position: relative;
+    margin: 3% 5%;
+}
+
+.tile {
+    min-height: 100px;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Name */
+.a {
+    @include lightPurpleOnDeepPurple;
+    grid-row: 1 / span 3;
+    grid-column: 3 / span 3;
+    text-align: center;
+    border: 10px double #C7D5F4;
+    font-family: $primaryFont;
+    font-weight: 700;
+    font-size: 100px;
+}
+
+/* Resume */
+.b {
+    @include deepPurpleOnTeal;
+    grid-row: 3 / span 3;
+    grid-column: 6 / span 2;
+    font-size: 50px;
+    font-family: $primaryFont;
+
+    &:hover {
+        @include yellowOnSalmon;
+    }
+
+}
+
+/* Software Engineer */
+.c {
+    @include deepPurpleOnTeal;
+    text-align: center;
+    font-size: 50px;
+    grid-row: 4 / span 2;
+    grid-column: 2 / span 2;
+    font-family: $primaryFont;
+    text-transform: uppercase;
+
+    .rotate {
+        transform: rotate(-20deg);
+    }
+}
+
+.d {
+    grid-row: 4 / span 1;
+    grid-column: 4 / span 1;
+    background: $lightPurple;
+}
+
+.e {
+    grid-row: 4 / span 1;
+    grid-column: 5 / span 1;
+    background: $lightTeal;
+    border-radius: 50%;
+}
+
+/* Location */
+.f {
+    @include secondaryText;
+    @include lightTealOnDeepPurple;
+    grid-row: 5 / span 1;
+    grid-column: 4 / span 2;
+}
+
+/* Creative Work */
+.g {
+    @include secondaryText;
+    grid-row: 6 / span 1;
+    grid-column: 3 / span 2;
+    background: $lightTeal;
+    color: $deepPurple;
+
+    &:hover {
+        @include yellowOnSalmon;
+    }
+
+}
+
+/* Contact */
+.h {
+    @include deepPurpleOnLightPurple;
+    grid-row: 6 / span 2;
+    grid-column: 5 / span 2;
+    font-size: 40px;
+    font-family: $primaryFont;
+
+    &:hover {
+        @include salmonOnLightYellow;
+
+        path {
+            fill: $salmon;
+        }
+    }
+}
+
+/* Projects */
+.i {
+    @include secondaryText;
+    @include lightTealOnDeepPurple;
+    grid-row: 6 / span 2;
+    grid-column: 7 / span 2;
+
+    &:hover {
+        @include salmonOnLightYellow;
+    }
+}
+
+.j {
+    grid-row: 2 / span 2;
+    grid-column: 8 / span 1;
+    background: $lightPurple;
+}
+
+/* Headshot */
+.k {
+    grid-row: 3 / span 2;
+    grid-column: 9 / span 2;
+    border: 3px solid $deepPurple;
+    background-size: cover;
+    background-image: url('/img/headshot.jpg');
+}
+
+.l {
+    grid-row: 4 / span 1;
+    grid-column: 8 / span 1;
+    background: $deepPurple;
+}
+
+/* Github */
+.m {
+    @include secondaryText;
+    @include deepPurpleOnLightTeal;
+    grid-row: 5 / span 1;
+    grid-column: 8 / span 2;
+
+    &:hover {
+        @include yellowOnSalmon;
+    }
+}
+
+/* LinkedIn */
+.n {
+    @include secondaryText;
+    @include deepPurpleOnLightPurple;
+    grid-row: 6 / span 1;
+    grid-column: 9 / span 2;
+
+    &:hover {
+        @include salmonOnLightYellow;
+    }
+}
+
+.round {
+    border-radius: 50%;
+}

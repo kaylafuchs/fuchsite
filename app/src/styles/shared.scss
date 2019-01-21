@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Bangers|Cousine|Karma);
+
+/* Fonts */
+$primaryFont: 'Bangers', sans-serif;
+$secondaryFont: 'Cousine', sans-serif;
+$tertiaryFont: 'Karma', serif;
+
+/* Colors */
+$salmon: #FF5B69;
+$darkSalmon: #e5515e;
+$lightSalmon: #ffeef0;
+
+$teal: #5BFFF1;
+$lightTeal: #CDFFFA;
+
+$lightPurple: #D3C8F5;
+$deepPurple: #2E06AE;
+
+$yellow: #FFE670;
+$lightYellow: #FFF4BD;
+$brightYellow: #FDD100;
+
+$orange: #FDA800;
+
+/* Mixins */
+@mixin secondaryText {
+    font-family: $secondaryFont;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+@mixin deepPurpleOnTeal {
+    background: $teal;
+    color: $deepPurple;
+}
+
+@mixin tealOnDeepPurple {
+    background: $deepPurple;
+    color: $teal;
+}
+
+@mixin lightTealOnDeepPurple {
+    background: $deepPurple;
+    color: $lightTeal;
+}
+
+@mixin deepPurpleOnLightTeal {
+    background: $lightTeal;
+    color: $deepPurple;
+}
+
+@mixin deepPurpleOnLightPurple {
+    background: $lightPurple;
+    color: $deepPurple;
+}
+
+@mixin lightPurpleOnDeepPurple {
+    background: $deepPurple;
+    color: $lightPurple;
+}
+
+@mixin yellowOnSalmon {
+    background: $salmon;
+    color: $yellow;
+}
+
+@mixin salmonOnLightYellow {
+    background: $lightYellow;
+    color: $salmon;
+}
+
+
+/* Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+    display: block;
+}
