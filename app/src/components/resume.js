@@ -83,7 +83,7 @@ const Resume = () => {
                 <div className="section-row">
                     <div className="section-column">
                     <div className="section-sub-heading">Integration Engineer</div>
-                    <div className="section-sub-sub-heading">BounceX | February 2017 - July 2018</div>
+                    <div className="section-sub-sub-heading">BounceX | February 2017 – July 2018</div>
                         <div className="work-description">
                             Built custom integrations for e-commerce and publishing clients using Javascript and jQuery.
                             Integrated BounceX PHP platform with client APIs.
