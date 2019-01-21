@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from './nav'
 import Resume from './resume'
-import CreativeWork from './creative-work'
+import CreativeWork from './creative-work';
 import Projects from './projects';
 
 

@@ -1,11 +1,5 @@
 @import 'shared';
 
-// .kf {
-//     @include secondaryText;
-//     color: $deepPurple;
-//     // font-weight: 800;
-// }
-
 .navbar {
     @include secondaryText;
     color: $deepPurple;
@@ -13,9 +7,7 @@
     background: $teal;
     display: flex;
     flex-direction: row;
-    // align-items: flex-start;
     justify-content: left;
-    // border-bottom: 2px solid $deepPurple;
 
     &:hover {
         background: $salmon;

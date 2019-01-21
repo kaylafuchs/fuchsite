@@ -1,39 +1,36 @@
-@import url(https://fonts.googleapis.com/css?family=Assistant);
-@import url(https://fonts.googleapis.com/css?family=Dancing+Script:700);
-@import url(https://fonts.googleapis.com/css?family=Bangers|Denk+One|Cousine|Lora|Karma|Cutive+Mono|Open+Sans:300,400,700,800);
+@import url(https://fonts.googleapis.com/css?family=Bangers|Cousine|Karma);
 
-$assistant: 'Assistant', sans-serif;
-$dancingScript: 'Dancing Script', sans-serif;
-$primary: 'Bangers', sans-serif;
-$oswald: 'Oswald', sans-serif;
-// $secondary: 'Cutive Mono', sans-serif;
-// $secondary: 'Denk One', sans-serif;
-// $secondary: 'Lora', sans-serif;
-$secondary: 'Cousine', sans-serif;
-$tertiary: 'Karma', serif;
+/* Fonts */
+$primaryFont: 'Bangers', sans-serif;
+$secondaryFont: 'Cousine', sans-serif;
+$tertiaryFont: 'Karma', serif;
 
-@mixin secondaryText {
-    font-family: $secondary;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-$teal: #5BFFF1;
+/* Colors */
 $salmon: #FF5B69;
 $darkSalmon: #e5515e;
-
-$lightTeal: #CDFFFA;
 $lightSalmon: #ffeef0;
-$lightPurple: #D3C8F5;
 
+$teal: #5BFFF1;
+$lightTeal: #CDFFFA;
+
+$lightPurple: #D3C8F5;
 $deepPurple: #2E06AE;
+
 $yellow: #FFE670;
 $lightYellow: #FFF4BD;
 $brightYellow: #FDD100;
 
 $orange: #FDA800;
 
+/* Mixins */
+@mixin secondaryText {
+    font-family: $secondaryFont;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Styles */
 body, html {
     margin: 0;
     padding: 0;
@@ -41,7 +38,7 @@ body, html {
 }
 
 a {
-    color: inherit; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
+    color: inherit;
+    text-decoration: inherit;
     display: block;
 }

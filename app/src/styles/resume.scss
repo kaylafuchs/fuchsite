@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    // background: $teal;
     padding: 10px 30px;
     align-items: center;
 }
@@ -16,7 +15,7 @@
 }
 
 h1 {
-    font-family: $primary;
+    font-family: $primaryFont;
     font-size: 60px;
     color: $deepPurple;
     letter-spacing: 2px;
@@ -25,17 +24,11 @@ h1 {
 }
 
 h2 {
-    font-family: $secondary;
+    font-family: $secondaryFont;
     text-transform: uppercase;
     font-size: 30px;
     color: $deepPurple;
     margin: 0 0 0 20px;
-}
-
-.rectangle {
-    width: 200px;
-    height: 100px;
-    background: $teal;
 }
 
 .resume {
@@ -48,7 +41,7 @@ h2 {
 .section {
     display: flex;
     flex-direction: column;
-    font-family: $tertiary;
+    font-family: $tertiaryFont;
     font-size: 20px;
     width: 100%;
     align-items: center;
@@ -107,13 +100,6 @@ h2 {
 .skills-column {
     display: flex;
     flex-direction: column;
-    // align-items: center;
-}
-
-.date {
-    font-family: $tertiary;
-    font-size: 16px;
-    // text-transform: uppercase;
 }
 
 .work-description {
