@@ -109,7 +109,7 @@ const Resume = () => {
                     <div className="section-sub-sub-heading">BounceX | July 2014 – July 2016</div>
                         <div className="work-description">
                             Worked with enterprise e-commerce and publishing clients to implement 
-                            high-impact digital marketing campaigns using BounceX\'s behavioral 
+                            high-impact digital marketing campaigns using BounceX&#39;s behavioral 
                             automation platform. Analyzed client data and ran A/B tests to optimize performance.
                         </div>
                     </div>
