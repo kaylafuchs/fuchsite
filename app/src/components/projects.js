@@ -3,8 +3,10 @@ import '../styles/shared.scss';
 
 const Projects = () => {
     return (
-        <div class="resume">
-        Projects
+        <div className="projects">
+            <div className="section">
+                <div className="section-heading">Coming Soon</div>
+            </div>
         </div>
     )
 }

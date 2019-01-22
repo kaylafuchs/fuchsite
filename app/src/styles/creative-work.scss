@@ -1,0 +1,18 @@
+@import 'shared';
+
+img {
+    align-self: center;
+}
+
+.img-wide {
+    max-width: 500px;
+}
+
+.img-tall {
+    max-height: 500px;
+}
+
+.ceramics-img {
+    max-width: 300px;
+    border: 3px solid $deepPurple;
+}
