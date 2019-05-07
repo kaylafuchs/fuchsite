@@ -1,7 +1,5 @@
 runtime: go
 env: flex
-automatic_scaling:
-  min_instances: 1
 resources:
   cpu: 1
   memory_gb: 2
