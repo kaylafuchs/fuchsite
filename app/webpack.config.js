@@ -36,6 +36,7 @@ module.exports = {
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: ['**/*', '!favicon*', '!headshot*'],
     }),
+    /* For webpack dev server only. Production server uses app/dist/index.html */
     new HtmlWebPackPlugin({
       template: './src/index.html',
       filename: './index.html'

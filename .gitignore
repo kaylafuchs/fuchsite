@@ -3,6 +3,6 @@ npm-debug.log
 .DS_Store
 app/dist/*/*.js
 app/dist/*/*.css
-app/dist/static/*.html
+app/dist/*/*.html
 vendor
 .idea
