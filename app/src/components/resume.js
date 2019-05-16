@@ -2,70 +2,77 @@ import React from 'react';
 import '../styles/shared.scss';
 import '../styles/resume.scss';
 
+const skills = {
+    Technical: [
+        'Go',
+        'Javascript',
+        'Node.js',
+        'PHP',
+        'SQL',
+        'Python',
+        'Docker',
+        'Kubernetes',
+        'HTML',
+        'CSS',
+        'Angular',
+        'React',
+        'CircleCI',
+        'Sass',
+        'Webpack',
+        'Gulp',
+        'Git',
+        'Jest',
+        'Mocha',
+        'Chai'
+    ],
+    'Non-Technical': [
+        'Graphic Design',
+        'Drawing',
+        'Photography',
+        'Layout Design',
+        'Painting',
+        'Ceramics',
+        'Digital Marketing',
+        'Copy Editing',
+        'Google Analytics'
+    ]
+};
+
+const renderSkills = (skills, numRows) => {
+    const columns = [];
+    for (let i = 0; i < skills.length; i += numRows) {
+        const spans = [];
+        for (let j = i; j < i + numRows; j++) {
+            spans.push(<span key={j}>{skills[j]}</span>)
+        }
+        columns.push(<div key={i} className="skills-column">{spans}</div>);
+    }
+    return <div className="skills-row">{columns}</div>
+}
+
+const renderSkillsSection = (data) => {
+    const section = [];
+    for (let key in data) {
+        section.push(
+            <div className="section-row">
+                <div className="section-column">
+                    <div className="section-sub-heading">{key}</div>
+                    <div className="skills-row">
+                        {renderSkills(data[key], 4)}
+                    </div>
+                </div>
+            </div>
+        );
+    };
+    return section;
+}
+
 const Resume = () => {
     return (
         <div className="resume">
             <div className="section skills">
                 <div className="section-heading">Skills</div>
-                <div className="section-row">
-                    <div className="section-column">
-                        <div className="section-sub-heading">Technical</div>
-                        <div className="skills-row">
-                            <div className="skills-column">
-                                <span>Javascript</span>
-                                <span>Node.js</span>
-                                <span>Golang</span>
-                                <span>PHP</span>
-                            </div>
-                            <div className="skills-column">
-                                <span>Python</span>
-                                <span>SQL</span>
-                                <span>Docker</span>
-                                <span>Kubernetes</span>
-                            </div>
-                            <div className="skills-column">
-                                <span>React</span>
-                                <span>Angular</span>
-                                <span>HTML</span>
-                                <span>CSS</span>
-                            </div>
-                            <div className="skills-column">
-                                <span>Sass</span>
-                                <span>Webpack</span>
-                                <span>Gulp</span> 
-                                <span>CircleCI</span>
-                            </div>
-                            <div className="skills-column">
-                                <span>Git</span>
-                                <span>Jest</span>
-                                <span>Mocha</span>
-                                <span>Chai</span> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="section-row">
-                    <div className="section-column">
-                        <div className="section-sub-heading">Non-Technical  </div>
-                        <div className="skills-row">
-                            <div className="skills-column">
-                                <span>Graphic Design</span>
-                                <span>Drawing</span>
-                                <span>Photography</span>
-                            </div>
-                            <div className="skills-column">
-                                <span>Layout Design</span>
-                                <span>Painting</span>
-                                <span>Ceramics</span>
-                            </div>
-                            <div className="skills-column">
-                                <span>Digital Marketing</span>
-                                <span>Copy Editing</span>
-                                <span>Google Analytics</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {renderSkillsSection(skills)}
             </div>
             <div className="section work-experience">
                 <div className="section-heading">Work Experience</div>
