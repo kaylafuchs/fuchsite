@@ -10,14 +10,14 @@ const CreativeWork = () => {
                 <div className="section-heading">Photography</div>
                 <div className="section-sub-heading">Visual Studies Senior Thesis: Street Photography</div>
                 <div className="section-row">
-                    <img className="img-tall" src="https://storage.googleapis.com/kf-creative-assets/vlst_3.png"></img>
-                    <img className="img-tall" src="https://storage.googleapis.com/kf-creative-assets/vlst_1.png"></img>
-                    <img className="img-tall" src="https://storage.googleapis.com/kf-creative-assets/vlst_2.png"></img>
+                    <img className="img-tall" src="https://storage.googleapis.com/kf-creative-assets/vlst_3_small.png"></img>
+                    <img className="img-tall" src="https://storage.googleapis.com/kf-creative-assets/vlst_1_small.png"></img>
+                    <img className="img-tall" src="https://storage.googleapis.com/kf-creative-assets/vlst_2_small.png"></img>
                 </div>
                 <div className="section-sub-heading">Personal</div>
                 <div className="section-row">
-                    <img className="img-wide" src="https://storage.googleapis.com/kf-creative-assets/personal_2.png"></img>
-                    <img className="img-wide" src="https://storage.googleapis.com/kf-creative-assets/personal_1.png"></img>
+                    <img className="img-wide" src="https://storage.googleapis.com/kf-creative-assets/personal_2_small.png"></img>
+                    <img className="img-wide" src="https://storage.googleapis.com/kf-creative-assets/personal_1_small.png"></img>
                 </div>
             </div>
             <div className="section illustration">
@@ -32,8 +32,8 @@ const CreativeWork = () => {
                 <div className="section-sub-heading">Created at Choplet Ceramics Studio | Brooklyn, NY</div>
                 <div className="section-row">
                     <img className="ceramics-img" src="https://storage.googleapis.com/kf-creative-assets/ceramics_4.png"></img>
-                    <img className="ceramics-img" src="https://storage.googleapis.com/kf-creative-assets/ceramics_3.png"></img>
-                    <img className="ceramics-img" src="https://storage.googleapis.com/kf-creative-assets/ceramics_5.png"></img>
+                    <img className="ceramics-img" src="https://storage.googleapis.com/kf-creative-assets/ceramics_6_small.png"></img>
+                    <img className="ceramics-img" src="https://storage.googleapis.com/kf-creative-assets/ceramics_7_small.png"></img>
                 </div>
             </div>
         </div>
