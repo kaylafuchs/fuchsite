@@ -6,7 +6,6 @@ import (
 	"net/http"
 	"os"
 	"os/signal"
-	"strings"
 	"syscall"
 	"time"
 
@@ -22,11 +21,17 @@ type Server struct {
 	logger *logrus.Entry
 }
 
-// NewServer returns a new instance of Server. Always listens on 8080 to enable GCP AppEngine deployment.
+// NewServer returns a new instance of Server.
 func NewServer(logger *logrus.Entry) *Server {
+	// Port is set automatically by AppEngine
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
+	logger.Info(fmt.Sprintf("Server using port %s", port))
 	return &Server{
 		server: &http.Server{
-			Addr: ":8080",
+			Addr: fmt.Sprintf(":%s", port),
 		},
 		logger: logger,
 	}
@@ -37,12 +42,15 @@ func (s *Server) NewRouter() {
 	router := mux.NewRouter()
 	router.Use(handlers.ProxyHeaders)
 
+	router.PathPrefix("/_ah/start").HandlerFunc(s.startHandler)
 	router.PathPrefix("/static/").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir("./app/dist/static"))))
 	router.PathPrefix("/").HandlerFunc(s.indexPageHandler)
 
-	s.server.Handler = s.newHTTPSRedirect(router)
+	s.server.Handler = router
 }
 
+/*
+// HTTPS Redirect middleware. For use with AppEngine flex environment only.
 func (s *Server) newHTTPSRedirect(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		if !strings.Contains(r.Host, "localhost") && r.Header.Get("X-Forwarded-Proto") != "https" {
@@ -53,9 +61,15 @@ func (s *Server) newHTTPSRedirect(next http.Handler) http.Handler {
 		next.ServeHTTP(w, r)
 	})
 }
+*/
 
 func (s *Server) indexPageHandler(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "./app/dist/index.html")
+}
+
+// Handles AppEngine start requests. Required for starting instances in standard environment.
+func (s *Server) startHandler(w http.ResponseWriter, r *http.Request) {
+	w.WriteHeader(200)
 }
 
 func (s *Server) initGracefulShutdown() {
