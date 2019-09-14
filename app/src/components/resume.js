@@ -12,10 +12,10 @@ const Resume = () => {
                         <div className="section-sub-heading">Technical</div>
                         <div className="skills-row">
                             <div className="skills-column">
-                                <span>Javascript</span>
-                                <span>Node.js</span>
                                 <span>Golang</span>
                                 <span>PHP</span>
+                                <span>Javascript</span>
+                                <span>Node.js</span>
                             </div>
                             <div className="skills-column">
                                 <span>Python</span>
@@ -36,7 +36,7 @@ const Resume = () => {
                                 <span>CircleCI</span>
                             </div>
                             <div className="skills-column">
-                                <span>Git</span>
+                                <span>Selenium</span>
                                 <span>Jest</span>
                                 <span>Mocha</span>
                                 <span>Chai</span> 
@@ -72,22 +72,22 @@ const Resume = () => {
                 <div className="section-row">
                     <div className="section-column">
                     <div className="section-sub-heading">Software Engineer</div>
-                    <div className="section-sub-sub-heading">BounceX | July 2018 – Present</div>
+                    <div className="section-sub-sub-heading">Vimeo | June 2019 – Present</div>
                         <div className="work-description">
-                            Full stack developer working on triggered sends products with a focus on
-                            web push and SMS channels. Develops microservices using Golang, Kubernetes, and 
-                            a variety of AWS and GCP services. Develops and maintains Node.js and PHP services.
+                            Back-end developer contributing to transactions services
+                            for Vimeo core product, enabling over a million subscribers
+                            and creators to purchase Vimeo products.
                         </div>
                     </div>
                 </div>
                 <div className="section-row">
                     <div className="section-column">
-                    <div className="section-sub-heading">Integration Engineer</div>
-                    <div className="section-sub-sub-heading">BounceX | February 2017 – July 2018</div>
+                    <div className="section-sub-heading">Software Engineer</div>
+                    <div className="section-sub-sub-heading">BounceX | February 2017 – June 2019</div>
                         <div className="work-description">
-                            Built custom integrations for e-commerce and publishing clients using Javascript and jQuery.
-                            Integrated BounceX PHP platform with client APIs.
-                            Managed a team of three integration engineers.
+                            Full stack developer. Worked on triggered sends products with a focus on
+                            web push and SMS channels. Developed microservices using Go, Kubernetes, and 
+                            a variety of AWS and GCP services. Developed and maintained Node.js and PHP services.
                         </div>
                     </div>
                 </div>
