@@ -31,45 +31,44 @@ $orange: #FDA800;
 }
 
 @mixin deepPurpleOnTeal {
-    background: $teal;
+    background-color: $teal;
     color: $deepPurple;
 }
 
 @mixin tealOnDeepPurple {
-    background: $deepPurple;
+    background-color: $deepPurple;
     color: $teal;
 }
 
 @mixin lightTealOnDeepPurple {
-    background: $deepPurple;
+    background-color: $deepPurple;
     color: $lightTeal;
 }
 
 @mixin deepPurpleOnLightTeal {
-    background: $lightTeal;
+    background-color: $lightTeal;
     color: $deepPurple;
 }
 
 @mixin deepPurpleOnLightPurple {
-    background: $lightPurple;
+    background-color: $lightPurple;
     color: $deepPurple;
 }
 
 @mixin lightPurpleOnDeepPurple {
-    background: $deepPurple;
+    background-color: $deepPurple;
     color: $lightPurple;
 }
 
 @mixin yellowOnSalmon {
-    background: $salmon;
+    background-color: $salmon;
     color: $yellow;
 }
 
 @mixin salmonOnLightYellow {
-    background: $lightYellow;
+    background-color: $lightYellow;
     color: $salmon;
 }
-
 
 /* Reset */
 body, html {
