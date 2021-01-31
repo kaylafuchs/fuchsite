@@ -23,7 +23,7 @@ class Home extends React.Component {
     render() {
         return this.state.mobile
             ? (
-                <div className="grid">
+                <div className="grid homepage">
                     <div className="tile a">Kayla<br></br>Fuchs</div>
                     <div className="mobile-row">
                         <div className="tile k round"></div>

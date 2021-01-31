@@ -1,6 +1,6 @@
 @import 'shared';
 
-#app {
+.homepage {
     @media screen and (max-width: 600px) {
         background-color: $teal;
         padding: 10px 0;
@@ -14,7 +14,6 @@
     grid-auto-rows: minmax(100px, 1fr);
 	grid-gap: 15px;
     grid-auto-flow: dense;
-    justify-content: center;
     position: relative;
     width: 1280px;
     margin: 3% auto;
@@ -25,7 +24,6 @@
         align-content: flex-start;
         width: auto;
         margin: 0;
-        gap: 0px;
     }
 }
 
@@ -92,6 +90,7 @@
 
     @media screen and (max-width: 600px) {
         font-size: 45px;
+        background-color: unset;
         text-shadow:
             -1px -1px 0 $yellow,
             1px -1px 0 $yellow,
@@ -246,7 +245,6 @@
     @include secondaryText;
     @include deepPurpleOnLightYellow;
     padding: 2px;
-    margin: 15px 0;
 
     &:hover {
         @include salmonOnLightYellow;

@@ -2,17 +2,34 @@
 
 img {
     align-self: center;
+
+    @media screen and (max-width: 600px) {
+        margin: 5px 0 15px 0;
+    }
 }
 
 .img-wide {
     max-width: 500px;
+    @media screen and (max-width: 600px) {
+        max-width: 90%;
+    }
 }
 
 .img-tall {
     max-height: 500px;
+
+    @media screen and (max-width: 600px) {
+        max-height: 400px;
+    }
 }
 
 .ceramics-img {
     max-width: 300px;
     border: 7px solid $lightPurple;
+}
+
+.mobile-column {
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
 }

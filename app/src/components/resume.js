@@ -12,7 +12,7 @@ const Resume = () => {
                         <div className="section-sub-heading">Technical</div>
                         <div className="skills-row">
                             <div className="skills-column">
-                                <span>Golang</span>
+                                <span>Go</span>
                                 <span>PHP</span>
                                 <span>Javascript</span>
                                 <span>Node.js</span>
