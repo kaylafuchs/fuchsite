@@ -1,9 +1,9 @@
 import React from 'react';
 import '../styles/shared.scss';
-import '../styles/tiles.scss';
+import '../styles/home.scss';
 import { Link } from 'react-router-dom';
 
-class Tiles extends React.Component {
+class Home extends React.Component {
     isMobile = () => !!navigator.maxTouchPoints || window.innerWidth <= 600;
 
     state = { mobile: this.isMobile() };
@@ -72,4 +72,4 @@ class Tiles extends React.Component {
     }
 }
 
-export default Tiles;
+export default Home;

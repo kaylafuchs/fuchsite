@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Home from '../components/tiles'
+import Home from '../components/home'
 import ContentPage from '../components/content-page'
 import ScrollToTop from 'react-router-scroll-top'
 
