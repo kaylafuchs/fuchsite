@@ -55,6 +55,11 @@ $orange: #FDA800;
     color: $deepPurple;
 }
 
+@mixin deepPurpleOnLightYellow {
+    background-color: $lightYellow;
+    color: $deepPurple;
+}
+
 @mixin lightPurpleOnDeepPurple {
     background-color: $deepPurple;
     color: $lightPurple;

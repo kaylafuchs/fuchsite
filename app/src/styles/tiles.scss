@@ -37,6 +37,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 600px) {
+        min-height: 20px;
+        color: $deepPurple;
+    }
 }
 
 /* Name */
@@ -51,9 +56,10 @@
     font-size: 100px;
 
     @media screen and (max-width: 600px) {
-        order: 1;
         border: none;
         text-shadow: 2px 2px 1px $salmon;
+        background-color: unset;
+        color: $deepPurple;
     }
 }
 
@@ -68,11 +74,6 @@
     &:hover {
         @include yellowOnSalmon;
     }
-
-    @media screen and (max-width: 600px) {
-        order: 5;
-    }
-
 }
 
 /* Software Engineer */
@@ -90,9 +91,9 @@
     }
 
     @media screen and (max-width: 600px) {
-        order: 3;
         font-size: 45px;
-        text-shadow: -1px -1px 0 $yellow,
+        text-shadow:
+            -1px -1px 0 $yellow,
             1px -1px 0 $yellow,
             -1px 1px 0 $yellow,
             1px 1px 0 $yellow;
@@ -103,10 +104,6 @@
     grid-row: 4 / span 1;
     grid-column: 4 / span 1;
     background: $lightPurple;
-
-    @media screen and (max-width: 600px) {
-        display: none;
-    }
 }
 
 .e {
@@ -114,10 +111,6 @@
     grid-column: 5 / span 1;
     background: $lightTeal;
     border-radius: 50%;
-
-    @media screen and (max-width: 600px) {
-        display: none;
-    }
 }
 
 /* Location */
@@ -128,7 +121,7 @@
     grid-column: 4 / span 2;
 
     @media screen and (max-width: 600px) {
-        order: 4;
+        font-size: 15px;
     }
 }
 
@@ -143,11 +136,6 @@
     &:hover {
         @include yellowOnSalmon;
     }
-
-    @media screen and (max-width: 600px) {
-        order: 8;
-    }
-
 }
 
 /* Contact */
@@ -165,10 +153,6 @@
             fill: $salmon;
         }
     }
-
-    @media screen and (max-width: 600px) {
-        order: 9;
-    }
 }
 
 /* Projects */
@@ -181,20 +165,12 @@
     &:hover {
         @include salmonOnLightYellow;
     }
-
-    @media screen and (max-width: 600px) {
-        display: none;
-    }
 }
 
 .j {
     grid-row: 2 / span 2;
     grid-column: 8 / span 1;
     background: $lightPurple;
-
-    @media screen and (max-width: 600px) {
-        display: none;
-    }
 }
 
 /* Headshot */
@@ -204,13 +180,13 @@
     border: 3px solid $deepPurple;
     background-size: cover;
     background-image: url('/static/headshot.jpg');
-    // for dev server uncomment the line below
-    // background-image: url('/dist/static/headshot.jpg');
+    // on dev server uncomment the line below
+    //background-image: url('/dist/static/headshot.jpg');
 
     @media screen and (max-width: 600px) {
-        order: 2;
         border: 6px solid $deepPurple;
-        box-shadow: -2px -2px 0 $lightTeal,
+        box-shadow:
+            -2px -2px 0 $lightTeal,
             2px -2px 0 $salmon,
             -2px 2px 0 $lightTeal,
             2px 2px 0 $salmon;
@@ -240,10 +216,6 @@
     &:hover {
         @include yellowOnSalmon;
     }
-
-    @media screen and (max-width: 600px) {
-        order: 6;
-    }
 }
 
 /* LinkedIn */
@@ -256,33 +228,33 @@
     &:hover {
         @include salmonOnLightYellow;
     }
-
-    @media screen and (max-width: 600px) {
-        order: 7;
-    }
 }
 
 .round {
     border-radius: 50%;
-
-    @media screen and (max-width: 600px) {
-        // border-radius: unset;
-    }
 }
 
 .mobile-row {
     @media screen and (max-width: 600px) {
-        order: 2;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
 }
 
-.tile-mobile {
-    @media screen and (max-width: 600px) {
-        background-color: unset;
-        min-height: 50px;
-        color: $deepPurple;
+.link-mobile {
+    @include secondaryText;
+    @include deepPurpleOnLightYellow;
+    padding: 2px;
+    margin: 15px 0;
+
+    &:hover {
+        @include salmonOnLightYellow;
     }
+}
+
+.location-mobile {
+    @include deepPurpleOnLightTeal;
+    padding: 2px;
+    margin: 5px 0;
 }
