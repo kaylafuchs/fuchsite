@@ -74,9 +74,8 @@ const Resume = () => {
                     <div className="section-sub-heading">Software Engineer</div>
                     <div className="section-sub-sub-heading">Vimeo | June 2019 – Present</div>
                         <div className="work-description">
-                            Back-end developer contributing to transactions services
-                            for Vimeo core product, enabling over a million subscribers
-                            and creators to purchase Vimeo products.
+                            Back-end developer contributing to payments services that
+                            enable over a million creators to purchase Vimeo's subscription products.
                         </div>
                     </div>
                 </div>
@@ -85,9 +84,9 @@ const Resume = () => {
                     <div className="section-sub-heading">Software Engineer</div>
                     <div className="section-sub-sub-heading">BounceX | February 2017 – June 2019</div>
                         <div className="work-description">
-                            Full stack developer. Worked on triggered sends products with a focus on
-                            web push and SMS channels. Developed microservices using Go, Kubernetes, and 
-                            a variety of AWS and GCP services. Developed and maintained Node.js and PHP services.
+                            Full stack developer for web push and triggered SMS products.
+                            Developed microservices using Go, Kubernetes, and a variety of AWS and GCP tools.
+                            Developed and maintained Node.js and PHP services.
                         </div>
                     </div>
                 </div>
@@ -97,7 +96,7 @@ const Resume = () => {
                     <div className="section-sub-sub-heading">Fullstack Academy | October 2016 – February 2017</div>
                         <div className="work-description">
                             Helped teach full stack Javascript development.
-                            Code reviewed student projects and assessments.
+                            Reviewed student projects and assessments.
                             Interviewed prospective students. Built features for online 
                             learning platform using Angular and Node.js.
                         </div>
