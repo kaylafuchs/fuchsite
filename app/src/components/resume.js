@@ -71,11 +71,14 @@ const Resume = () => {
                 <div className="section-heading">Work Experience</div>
                 <div className="section-row">
                     <div className="section-column">
-                    <div className="section-sub-heading">Software Engineer</div>
+                    <div className="section-sub-heading">Senior Software Engineer</div>
                     <div className="section-sub-sub-heading">Vimeo | June 2019 – Present</div>
                         <div className="work-description">
-                            Back-end developer contributing to payments services that
-                            enable over a million creators to purchase Vimeo's subscription products.
+                            Full stack developer contributing to payments infrastructure that
+                            enables creators to purchase Vimeo's subscription products and monetize their content
+                            by selling through Vimeo On Demand.
+                            Develop and maintain React checkout app, PHP APIs, PHP webserver, and Go payments service that
+                            integrate with multiple payments vendors including Zuora, PayPal, and Stripe.
                         </div>
                     </div>
                 </div>
