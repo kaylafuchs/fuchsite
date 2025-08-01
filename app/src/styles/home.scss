@@ -154,7 +154,7 @@
     }
 }
 
-/* Projects */
+/* LinkedIn */
 .i {
     @include secondaryText;
     @include lightTealOnDeepPurple;
@@ -217,16 +217,15 @@
     }
 }
 
-/* LinkedIn */
 .n {
     @include secondaryText;
     @include deepPurpleOnLightPurple;
     grid-row: 6 / span 1;
     grid-column: 9 / span 2;
 
-    &:hover {
-        @include salmonOnLightYellow;
-    }
+    // &:hover {
+    //     @include salmonOnLightYellow;
+    // }
 }
 
 .round {
