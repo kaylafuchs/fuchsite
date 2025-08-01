@@ -178,9 +178,9 @@
     grid-column: 9 / span 2;
     border: 3px solid $deepPurple;
     background-size: cover;
-    background-image: url('/static/headshot.jpg');
+    background-image: url('/static/headshot-2025.jpg');
     // on dev server uncomment the line below
-    //background-image: url('/dist/static/headshot.jpg');
+    // background-image: url('/dist/static/headshot-2025.jpg');
 
     @media screen and (max-width: 600px) {
         border: 6px solid $deepPurple;
