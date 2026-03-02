@@ -72,7 +72,7 @@ const Resume = () => {
                 <div className="section-row">
                     <div className="section-column">
                     <div className="section-sub-heading">Senior Software Engineer</div>
-                    <div className="section-sub-sub-heading">Vimeo | June 2019 – Present</div>
+                    <div className="section-sub-sub-heading">Vimeo | June 2019 – March 2026</div>
                         <div className="work-description">
                             Full stack developer contributing to payments infrastructure that
                             enables creators to purchase Vimeo's subscription products and monetize their content
