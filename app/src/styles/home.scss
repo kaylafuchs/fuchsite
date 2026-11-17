@@ -3,8 +3,6 @@
 .homepage {
     @media screen and (max-width: 600px) {
         background-color: $teal;
-        padding: 10px 0;
-        height: 100vh;
     }
 }
 
@@ -58,6 +56,9 @@
         text-shadow: 2px 2px 1px $salmon;
         background-color: unset;
         color: $deepPurple;
+        font-size: min(22vw, 10.5vh);
+        font-size: min(22vw, 10.5dvh);
+        line-height: 0.95;
     }
 }
 
@@ -89,7 +90,9 @@
     }
 
     @media screen and (max-width: 600px) {
-        font-size: 45px;
+        font-size: min(11.5vw, 6vh);
+        font-size: min(11.5vw, 6dvh);
+        line-height: 1;
         background-color: unset;
         text-shadow:
             -1px -1px 0 $yellow,
@@ -188,9 +191,12 @@
             2px -2px 0 $salmon,
             -2px 2px 0 $lightTeal,
             2px 2px 0 $salmon;
-        height: 150px;
+        flex: none;
+        width: min(40vw, 22vh);
+        width: min(40vw, 22dvh);
+        height: min(40vw, 22vh);
+        height: min(40vw, 22dvh);
         background-position-y: 15%;
-        width: 40%;
     }
 }
 
@@ -236,15 +242,18 @@
     @media screen and (max-width: 600px) {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        margin: 5px 0;
+        justify-content: center;
+        align-items: center;
+        gap: 7vw;
     }
 }
 
 .link-mobile {
     @include secondaryText;
     @include deepPurpleOnLightYellow;
-    padding: 2px;
+    padding: 2px 6px;
+    font-size: clamp(15px, 3.2vh, 20px);
+    font-size: clamp(15px, 3.2dvh, 20px);
 
     &:hover {
         @include salmonOnLightYellow;
@@ -253,6 +262,21 @@
 
 .location-mobile {
     @include deepPurpleOnLightTeal;
-    padding: 2px;
-    margin: 5px 0;
+    padding: 2px 6px;
+}
+
+// Phones: fit the whole home page in the visible screen (dvh excludes browser toolbars), spaced evenly.
+// min-height rather than height, so a very short screen scrolls instead of squashing/cropping content.
+@media screen and (max-width: 600px) {
+    .grid.homepage {
+        box-sizing: border-box;
+        min-height: 100vh;
+        min-height: 100dvh;
+        padding: max(12px, env(safe-area-inset-top)) 16px max(12px, env(safe-area-inset-bottom));
+        justify-content: space-evenly;
+
+        > * {
+            flex-shrink: 0;
+        }
+    }
 }
