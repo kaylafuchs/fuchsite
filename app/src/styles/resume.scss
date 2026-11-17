@@ -1,4 +1,4 @@
-@import 'shared';
+@use 'shared' as *;
 
 .header {
     display: flex;
@@ -121,4 +121,24 @@ h2 {
     padding: 10px;
     font-size: inherit;
     text-align: center;
+}
+
+// Link styled like the section highlights (e.g. "Work Experience"), with a long thin arrow.
+.cta {
+    @include secondaryText;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: $lightTeal;
+    padding: 2px 8px;
+    font-size: 18px;
+
+    .cta-arrow {
+        transition: transform 0.2s ease;
+    }
+
+    &:hover .cta-arrow,
+    &:focus-visible .cta-arrow {
+        transform: translateX(4px);
+    }
 }

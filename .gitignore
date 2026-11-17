@@ -6,3 +6,4 @@ app/dist/*/*.css
 app/dist/*/*.html
 vendor
 .idea
+app/dist/*/*.LICENSE.txt

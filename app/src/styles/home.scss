@@ -1,4 +1,4 @@
-@import 'shared';
+@use 'shared' as *;
 
 .homepage {
     @media screen and (max-width: 600px) {
@@ -217,15 +217,16 @@
     }
 }
 
+/* Instagram */
 .n {
     @include secondaryText;
     @include deepPurpleOnLightPurple;
     grid-row: 6 / span 1;
     grid-column: 9 / span 2;
 
-    // &:hover {
-    //     @include salmonOnLightYellow;
-    // }
+    &:hover {
+        @include salmonOnLightYellow;
+    }
 }
 
 .round {

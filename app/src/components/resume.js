@@ -71,14 +71,31 @@ const Resume = () => {
                 <div className="section-heading">Work Experience</div>
                 <div className="section-row">
                     <div className="section-column">
+                    <div className="section-sub-heading">Co-Founder & CTO</div>
+                    <div className="section-sub-sub-heading">Orqestratr | April 2026 – Present</div>
+                        <div className="work-description">
+                            Building the AI-powered workflow platform for influencer marketers.
+                            <br />
+                            Beta waitlist now open.
+                        </div>
+                        <a className="cta" href="https://orqestratr.com" target="_blank" rel="noopener noreferrer">
+                            Check it out
+                            <svg className="cta-arrow" width="40" height="12" viewBox="0 0 40 12" aria-hidden="true">
+                                <path d="M0 6H38M33 1L38 6L33 11" fill="none" stroke="currentColor" strokeWidth="1.5" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div className="section-row">
+                    <div className="section-column">
                     <div className="section-sub-heading">Senior Software Engineer</div>
                     <div className="section-sub-sub-heading">Vimeo | June 2019 – March 2026</div>
                         <div className="work-description">
-                            Full stack developer contributing to payments infrastructure that
-                            enables creators to purchase Vimeo's subscription products and monetize their content
+                            Full stack developer for payments platform that
+                            enabled creators to purchase Vimeo's subscription products and monetize their content
                             by selling through Vimeo On Demand.
-                            Develop and maintain React checkout app, PHP APIs, PHP webserver, and Go payments service that
-                            integrate with multiple payments vendors including Zuora, PayPal, and Stripe.
+                            Developed and maintained React checkout app, PHP APIs, PHP webserver, and Go payments service that
+                            integrated with multiple payments vendors including Zuora, PayPal, and Stripe.
                         </div>
                     </div>
                 </div>

@@ -46,6 +46,9 @@ class Home extends React.Component {
                     <div className="mobile-row">
                         <a href="https://github.com/kaylafuchs/" className="tile link-mobile m" target="_blank">Github</a>
                     </div>
+                    <div className="mobile-row">
+                        <a href="https://www.instagram.com/_zerofuchs/" className="tile link-mobile" target="_blank" rel="me noopener noreferrer">Instagram</a>
+                    </div>
                 </div>
             ) : (
                 <div className="grid">
@@ -66,7 +69,7 @@ class Home extends React.Component {
                     </div>
                     <div className="tile l"></div>
                     <a href="https://github.com/kaylafuchs/" className="tile m" target="_blank">Github</a>
-                    <div className="tile n"></div>
+                    <a href="https://www.instagram.com/_zerofuchs/" className="tile n" target="_blank" rel="me noopener noreferrer">Instagram</a>
                 </div>
             );
     }

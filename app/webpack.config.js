@@ -1,46 +1,50 @@
-const HtmlWebPackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+const staticDir = path.resolve(__dirname, 'dist/static');
 
 module.exports = {
-  entry: [
-    '@babel/polyfill',
-    './src/index.js',
-  ],
+  entry: './src/index.js',
   output: {
     filename: 'app.js',
-    path: __dirname + '/dist/static'
+    path: staticDir,
+    publicPath: '/static/',
+    // Wipe old build output, but keep the hand-managed assets that live alongside it.
+    clean: {
+      keep: /^(favicon|headshot|creative)/,
+    },
   },
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
+        use: 'babel-loader',
       },
       {
         test: /\.scss$/,
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: "css-loader!sass-loader"
-        })
-      }
-     ]
+        use: [
+          MiniCssExtractPlugin.loader,
+          // Leave root-relative urls like /static/headshot-2026.jpg for the server to resolve.
+          { loader: 'css-loader', options: { url: { filter: (url) => !url.startsWith('/') } } },
+          'sass-loader',
+        ],
+      },
+    ],
   },
   devServer: {
-    historyApiFallback: true,
+    port: 3030, // not 8080, which conflicts with other local apps
+    historyApiFallback: { index: '/static/index.html' },
+    // Serve headshots, favicon and creative-work images at /static/, same as the Go server.
+    static: { directory: staticDir, publicPath: '/static/' },
   },
   plugins: [
-    new CleanWebpackPlugin({
-      cleanOnceBeforeBuildPatterns: ['**/*', '!favicon*', '!headshot*'],
-    }),
     /* For webpack dev server only. Production server uses app/dist/index.html */
-    new HtmlWebPackPlugin({
+    new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: './index.html'
+      filename: 'index.html',
     }),
-    new ExtractTextPlugin('style.css')
-  ]
+    new MiniCssExtractPlugin({ filename: 'style.css' }),
+  ],
 };
